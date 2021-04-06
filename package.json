@@ -1,0 +1,17 @@
+{
+  "name": "npm-run-all-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "echo-user": "doppler run -- bash -c 'echo $USERNAME && sleep 10'",
+    "echo-workers": "doppler run -- bash -c 'echo $WORKERS && sleep 10'",
+    "local-dev": "npm-run-all -p echo-user echo-workers"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
